@@ -12,13 +12,13 @@ jobs:
   backup:
     name: Back up database
     runs-on: self-hosted
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
       - name: Install mongodb-database-tools
-        script: |
+        run: |
           sudo apt update && \
           sudo apt install wget && \
           wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu2404-x86_64-100.13.0.deb && \
@@ -26,11 +26,11 @@ jobs:
           rm ./mongodb-database-tools-ubuntu2404-x86_64-100.13.0.deb && \
           mongodump --version
       - name: Dump database archive
-        script: |
+        run: |
           mkdir -p backup && \
           mongodump --db=arknights --archive=backup/arknights.dump
       - name: Commit database archive
-        script: |
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config --global http.postBuffer 524288000
