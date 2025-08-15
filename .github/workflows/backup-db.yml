@@ -1,0 +1,45 @@
+name: Back up database
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 1 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  backup:
+    name: Back up database
+    runs-on: self-hosted
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Install mongodb-database-tools
+        script: |
+          sudo apt update && \
+          sudo apt install wget && \
+          wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu2404-x86_64-100.13.0.deb && \
+          sudo apt install ./mongodb-database-tools-ubuntu2404-x86_64-100.13.0.deb && \
+          rm ./mongodb-database-tools-ubuntu2404-x86_64-100.13.0.deb && \
+          mongodump --version
+      - name: Dump database archive
+        script: |
+          mkdir -p backup && \
+          mongodump --db=arknights --archive=backup/arknights.dump
+      - name: Commit database archive
+        script: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global http.postBuffer 524288000
+          BRANCH_NAME="$(date +'%Y-%m-%d')"
+          git checkout -b $BRANCH_NAME
+          git add backup/arknights.dump || :
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "backup: $BRANCH_NAME"
+          fi
+          git push -f --set-upstream origin $BRANCH_NAME
