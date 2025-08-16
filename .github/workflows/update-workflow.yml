@@ -10,6 +10,11 @@ on:
         options:
           - cn
           - en
+      force_en_download:
+        description: "Force download from EN server"
+        required: true
+        type: boolean
+        default: false
       skip_apk_update:
         description: "Skip APK update"
         required: false
@@ -96,6 +101,10 @@ jobs:
             echo "condition=true" >> $GITHUB_OUTPUT
             if [[ "${{ inputs.server }}" == "cn" ]]; then
               echo "extract=true" >> $GITHUB_OUTPUT
+            elif [[ "${{ inputs.server }}" == "en" && "${{ inputs.force_en_download }}" == "true" ]]; then
+              echo "extract=true" >> $GITHUB_OUTPUT
+            else
+              echo "extract=false" >> $GITHUB_OUTPUT
             fi
           fi
       - name: Download APK
