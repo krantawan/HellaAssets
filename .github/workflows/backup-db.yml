@@ -66,9 +66,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          gh pr create --title "update: ${{ needs.backup.outputs.branch-name }}" --body "Merge ${{ needs.backup.outputs.branch-name }} into main" --base main --head ${{ needs.backup.outputs.branch-name }} || :
-      # - name: Merge pull request
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-      #   run: |
-      #     gh pr merge --auto --squash --delete-branch ${{ needs.backup.outputs.branch-name }} || :
+          gh pr create --title "backup: ${{ needs.backup.outputs.branch-name }}" --body "Merge ${{ needs.backup.outputs.branch-name }} into main" --base main --head ${{ needs.backup.outputs.branch-name }} || :
+      - name: Merge pull request
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          gh pr merge --auto --squash --delete-branch ${{ needs.backup.outputs.branch-name }} || :
