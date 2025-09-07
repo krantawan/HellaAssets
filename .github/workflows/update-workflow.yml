@@ -535,4 +535,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          gh pr merge --auto --squash --delete-branch ${{ needs.update.outputs.branch-name }} || :
+          gh pr merge --squash --delete-branch ${{ needs.update.outputs.branch-name }} || :
