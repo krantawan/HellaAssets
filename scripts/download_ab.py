@@ -34,7 +34,7 @@ def main():
     parser = argparse.ArgumentParser(description='CLI tool to download Arknights "hot update" asset files.')
     parser.add_argument('--server', type=str, dest='server', choices=['cn', 'en'], required=True, help='Server to download from.')
     parser.add_argument('--dest', type=str, dest='dest', default='download', help='Directory to download files into.')
-    parser.add_argument('--old-list', type=str, dest='old_list', default='', help='Path to old hot update list.')
+    parser.add_argument('--old-list', type=str, dest='old_list', default='hot_update_list.json', help='Path to old hot update list.')
     parser.add_argument('--always', type=str, dest='always', default='', help='Semi-colon separated list of filenames to always download. Uses substring matching. Takes precedence over --skip-download.')
     parser.add_argument('--skip', type=str, dest='skip', default='', help='Semi-colon separated list of filenames to skip. Uses substring matching.')
     args = parser.parse_args()
