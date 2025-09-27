@@ -29,10 +29,10 @@ def get_apk_url(server, user_agent):
                         try:
                             page.goto("https://d.apkpure.com/b/XAPK/com.YoStarEN.Arknights?version=latest", timeout=90000)
                         except Exception as e:
-                            if (not "Page.goto: net::ERR_ABORTED at" in str(e)):
+                            if (not "Page.goto: net::ERR_ABORTED at" in str(e) and not "Page.goto: Download is starting" in str(e)):
                                 raise e
-                    download = download_info.value
-                    return download.url
+                        download = download_info.value
+                        return download.url
 
                 browser.close()
                 break
