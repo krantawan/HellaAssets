@@ -83,7 +83,7 @@ def main():
                 pass
             else:
                 if is_skip_file:
-                    print('Skipping', round(item['totalSize']/1000/1000, 1), 'MB', filename)
+                    # print('Skipping', round(item['totalSize']/1000/1000, 1), 'MB', filename)
                     continue
                 if is_old_file:
                     continue
