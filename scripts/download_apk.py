@@ -18,7 +18,8 @@ def get_apk_url(server, user_agent):
                 page = context.new_page()
 
                 if server == 'cn':
-                    page.goto("https://www.biligame.com/detail/?id=101772", wait_until="networkidle", timeout=90000)
+                    page.goto("https://www.biligame.com/detail/?id=101772", timeout=90000)
+                    page.wait_for_selector('a[href^="https://pkg.bili"][href$=".apk"]', timeout=90000)
                     content = page.content()
                     matches = re.findall(r'<a href="https://pkg\.bili[^"]+\.apk', content)
                     download_url = re.sub(r'^.*href="', '', matches[0])
