@@ -10,8 +10,13 @@ on:
         options:
           - cn
           - en
-      force_en_download:
-        description: "Force download from EN server"
+      extract_en_assets:
+        description: "Extract assets for EN server"
+        required: true
+        type: boolean
+        default: false
+      auto_merge_pr:
+        description: "Automatically merge PR"
         required: true
         type: boolean
         default: false
@@ -24,7 +29,7 @@ on:
         description: "Assets to overwrite"
         required: false
         type: string
-        default: ""
+        default: "gamedata"
       force_downloads:
         description: "ABs to force download"
         required: false
@@ -53,30 +58,43 @@ jobs:
     runs-on: self-hosted
     timeout-minutes: 60
     outputs: # https://stackoverflow.com/questions/70287603/dynamic-outputs-for-job-with-strategy-matrix
+      update-condition: ${{ steps.download-assets.outputs.condition }}
       branch-name: ${{ steps.checkout-branch.outputs.branch-name }}
       deploy-spine-condition: ${{ steps.extract-deploy-spine.outputs.condition }}
       enemy-spine-condition: ${{ steps.extract-enemy-spine.outputs.condition }}
       operator-spine-condition: ${{ steps.extract-operator-spine.outputs.condition }}
-      update-condition: ${{ steps.download-assets.outputs.condition }}
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
+
       - name: Install dependencies
         working-directory: scripts
         run: |
-          sudo apt update
-          sudo apt install -y dotnet8 imagemagick jq python3 python3-pip python3-venv curl tar git sudo sed wget dpkg zip
+          sudo apt update && sudo apt install -y curl dotnet8 dpkg git imagemagick jq python3 python3-pip python3-venv sed sudo tar wget zip
+
           python3 -m venv $HOME/venv \
-            && source $HOME/venv/bin/activate \
-            && pip install -r requirements.txt
-          playwright install
-          playwright install-deps
-          rm -f temp && mkdir temp
-          wget -nv https://github.com/aelurum/AssetStudio/releases/download/ak-v1.2.1/ArknightsStudioCLI-net8-Portable.v1.2.1.zip -O temp/ArknightsStudioCLI.zip
-          unzip -q temp/ArknightsStudioCLI.zip -d temp/ArknightsStudioCLI
-          rm -f temp/ArknightsStudioCLI.zip
-          echo "ARKSTUDIOCLI=$(pwd)/temp/ArknightsStudioCLI/ArknightsStudioCLI.dll" >> "$GITHUB_ENV"
+          && source $HOME/venv/bin/activate \
+          && pip install -r requirements.txt \
+          && playwright install \
+          && playwright install-deps
+
+          rm -f temp && mkdir temp \
+          && cd temp
+
+          git clone --depth=1 https://github.com/ArknightsAssets/ArknightsFlatbuffers.git
+
+          # official flatc releases don't preserve null fields, but this one does?
+          wget -nv https://raw.githubusercontent.com/MooncellWiki/torappu/refs/heads/main/bin/flatc \
+          && chmod +x ./flatc \
+          && sudo cp -f flatc /usr/local/bin/flatc \
+          && flatc --version
+
+          wget -nv https://github.com/aelurum/AssetStudio/releases/download/ak-v1.2.3/ArknightsStudioCLI_net8_portable.zip -O ArknightsStudioCLI.zip \
+          && unzip -q ArknightsStudioCLI.zip -d ArknightsStudioCLI \
+          && rm -f ArknightsStudioCLI.zip \
+          && echo "ARKSTUDIOCLI=$(pwd)/ArknightsStudioCLI/ArknightsStudioCLI.dll" >> "$GITHUB_ENV"
+
       - name: Download assets
         id: download-assets
         working-directory: scripts
@@ -95,18 +113,30 @@ jobs:
             exit 1
           fi
 
-          if [[ $(cat temp/update.out) == *"Up to date"* ]]; then
+          UPDATE_OUTPUT=$(cat temp/update.out)
+
+          if [[ "$UPDATE_OUTPUT" == *"Up to date"* ]]; then
             echo "condition=false" >> $GITHUB_OUTPUT
+            echo "extract-assets=false" >> $GITHUB_OUTPUT
+            echo "extract-gamedata=false" >> $GITHUB_OUTPUT
           else
             echo "condition=true" >> $GITHUB_OUTPUT
-            if [[ "${{ inputs.server }}" == "cn" ]]; then
-              echo "extract=true" >> $GITHUB_OUTPUT
-            elif [[ "${{ inputs.server }}" == "en" && "${{ inputs.force_en_download }}" == "true" ]]; then
-              echo "extract=true" >> $GITHUB_OUTPUT
-            else
-              echo "extract=false" >> $GITHUB_OUTPUT
-            fi
+            case "${{ inputs.server }}" in
+              cn)
+                echo "extract-assets=true" >> $GITHUB_OUTPUT
+                echo "extract-gamedata=false" >> $GITHUB_OUTPUT
+                ;;
+              en)
+                echo "extract-assets=${{ inputs.extract_en_assets }}" >> $GITHUB_OUTPUT
+                echo "extract-gamedata=true" >> $GITHUB_OUTPUT
+                ;;
+              *)
+                echo "extract-assets=false" >> $GITHUB_OUTPUT
+                echo "extract-gamedata=false" >> $GITHUB_OUTPUT
+                ;;
+            esac
           fi
+
       - name: Download APK
         if: steps.download-assets.outputs.condition == 'true'
         working-directory: scripts
@@ -121,7 +151,9 @@ jobs:
           fi
 
           if [[ "${{ inputs.skip_apk_update }}" == "true" ]]; then
-            wget "$LOCAL_URL" -O ${{ inputs.server }}.apk
+            wget -nv "$LOCAL_URL" -O temp/download/${{ inputs.server }}.apk
+            unzip -q temp/download/${{ inputs.server }}.apk -d temp/apk \
+            && unzip -q temp/apk/Android/obb/com.YoStarEN.Arknights/main*.obb -d temp/obb
           else
             python3 download_apk.py         \
               --server ${{ inputs.server }} \
@@ -132,12 +164,13 @@ jobs:
             if [[ "${PIPESTATUS}" -ne 0 ]]; then
               exit 1
             fi
-
             if [[ $(cat temp/apk.out) != *"Up to date"* ]]; then
-              unzip -q temp/download/${{ inputs.server }}.apk -d temp/apk
-              echo $REMOTE_URL > apk_url_${{ inputs.server }}.txt
+              unzip -q temp/download/${{ inputs.server }}.apk -d temp/apk \
+              && unzip -q temp/apk/Android/obb/com.YoStarEN.Arknights/main*.obb -d temp/obb
+              echo $(grep -oP 'https://[^ ]+' temp/apk.out | head -1) > apk_url_${{ inputs.server }}.txt
             fi
           fi
+
       - name: Checkout branch
         if: steps.download-assets.outputs.condition == 'true'
         id: checkout-branch
@@ -159,8 +192,35 @@ jobs:
           fi
           git push -f --set-upstream origin $BRANCH_NAME
           echo "branch-name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+
+      - name: Extract gamedata
+        if: steps.download-assets.outputs.extract-gamedata == 'true'
+        run: |
+          source $HOME/venv/bin/activate
+          source scripts/utils.sh
+
+          OPTIONS="--filter-by-text gamedata -t textasset -g container --log-level warning"
+          mkdir -p scripts/temp/extract/obb scripts/temp/extract/anon
+          dotnet $ARKSTUDIOCLI scripts/temp/obb/assets/AB/Android/anon $OPTIONS -o scripts/temp/extract/obb
+          dotnet $ARKSTUDIOCLI scripts/temp/download/anon $OPTIONS -o scripts/temp/extract/anon
+
+          python3 scripts/gamedata.py                   \
+          --schema-dir scripts/temp/ArknightsFlatbuffers/yostar \
+          --anon-dir scripts/temp/extract/anon                  \
+          --obb-dir scripts/temp/extract/obb                    \
+          --merge-dir scripts/temp/merge                        \
+          --out-dir gamedata
+
+          mv gamedata/dyn/gamedata/* gamedata || :
+          rm -rf gamedata/dyn
+
+          git_commit "${{ inputs.modify_assets }}" "gamedata" "Gamedata"
+          if [[ $(cat /tmp/git_commit) -eq 1 ]]; then
+            git push
+          fi
+
       - name: Extract enemy assets
-        if: steps.download-assets.outputs.extract == 'true'
+        if: steps.download-assets.outputs.extract-assets == 'true'
         run: |
           source scripts/utils.sh
 
@@ -173,8 +233,9 @@ jobs:
           if [[ $(cat /tmp/git_commit) -eq 1 ]]; then
             git push
           fi
+
       - name: Extract item assets
-        if: steps.download-assets.outputs.extract == 'true'
+        if: steps.download-assets.outputs.extract-assets == 'true'
         run: |
           source scripts/utils.sh
 
@@ -187,8 +248,9 @@ jobs:
           if [[ $(cat /tmp/git_commit) -eq 1 ]]; then
             git push
           fi
+
       - name: Extract operator assets
-        if: steps.download-assets.outputs.extract == 'true'
+        if: steps.download-assets.outputs.extract-assets == 'true'
         run: |
           source scripts/utils.sh
 
@@ -235,8 +297,9 @@ jobs:
           if [[ $(cat /tmp/git_commit) -eq 1 ]]; then
             git push
           fi
+
       - name: Extract roguelike assets
-        if: steps.download-assets.outputs.extract == 'true'
+        if: steps.download-assets.outputs.extract-assets == 'true'
         run: |
           source scripts/utils.sh
 
@@ -249,8 +312,9 @@ jobs:
           if [[ $(cat /tmp/git_commit) -eq 1 ]]; then
             git push
           fi
+
       - name: Extract sandbox assets
-        if: steps.download-assets.outputs.extract == 'true'
+        if: steps.download-assets.outputs.extract-assets == 'true'
         run: |
           source scripts/utils.sh
 
@@ -265,8 +329,9 @@ jobs:
           if [[ $(cat /tmp/git_commit) -eq 1 ]]; then
             git push
           fi
+
       - name: Extract skingroups assets
-        if: steps.download-assets.outputs.extract == 'true'
+        if: steps.download-assets.outputs.extract-assets == 'true'
         run: |
           source scripts/utils.sh
 
@@ -298,8 +363,9 @@ jobs:
           if [[ $(cat /tmp/git_commit) -eq 1 ]]; then
             git push
           fi
+
       - name: Extract deployable spine assets
-        if: steps.download-assets.outputs.extract == 'true'
+        if: steps.download-assets.outputs.extract-assets == 'true'
         id: extract-deploy-spine
         run: |
           source $HOME/venv/bin/activate
@@ -329,8 +395,9 @@ jobs:
           else
             echo "condition=false" >> $GITHUB_OUTPUT
           fi
+
       - name: Extract enemy spine assets
-        if: steps.download-assets.outputs.extract == 'true'
+        if: steps.download-assets.outputs.extract-assets == 'true'
         id: extract-enemy-spine
         run: |
           source $HOME/venv/bin/activate
@@ -349,8 +416,9 @@ jobs:
           else
             echo "condition=false" >> $GITHUB_OUTPUT
           fi
+
       - name: Extract operator spine assets
-        if: steps.download-assets.outputs.extract == 'true'
+        if: steps.download-assets.outputs.extract-assets == 'true'
         id: extract-operator-spine
         run: |
           source $HOME/venv/bin/activate
@@ -380,8 +448,9 @@ jobs:
           else
             echo "condition=false" >> $GITHUB_OUTPUT
           fi
+
       - name: Extract stage assets
-        if: steps.download-assets.outputs.extract == 'true'
+        if: steps.download-assets.outputs.extract-assets == 'true'
         run: |
           source scripts/utils.sh
 
@@ -402,7 +471,7 @@ jobs:
   spine:
     name: Apply spine transparency
     needs: update
-    if: needs.update.outputs.enemy-spine-condition == 'true' || needs.update.outputs.operator-spine-condition == 'true'
+    if: needs.update.outputs.deploy-spine-condition == 'true' || needs.update.outputs.enemy-spine-condition == 'true' || needs.update.outputs.operator-spine-condition == 'true'
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
@@ -410,16 +479,15 @@ jobs:
           ref: ${{ needs.update.outputs.branch-name }}
           sparse-checkout: |
             spine
-      - name: Download ArkUnpacker source
+
+      - name: Download ArkUnpacker
         run: |
           Set-Location ..
           git clone --recurse-submodules --depth=1 --branch v4.0.1 https://github.com/isHarryh/Ark-Unpacker.git
-      - name: Install ArkUnpacker dependencies
-        run: pip install bson flatbuffers numpy Pillow pycryptodome pydub "unitypy>=1.22.2"
-      - name: Patch ArkUnpacker to encode UTF-8
-        run: |
-          (Get-Content ..\Ark-Unpacker\src\utils\GlobalMethods.py) -replace '\{text\}', '{text.encode()}' | Set-Content ..\Ark-Unpacker\src\utils\GlobalMethods.py
-          (Get-Content ..\Ark-Unpacker\src\utils\GlobalMethods.py) -replace '\{obj\}', '{obj.encode()}' | Set-Content ..\Ark-Unpacker\src\utils\GlobalMethods.py
+          pip install bson flatbuffers numpy Pillow pycryptodome pydub "unitypy>=1.22.2"
+          (Get-Content Ark-Unpacker\src\utils\GlobalMethods.py) -replace '\{text\}', '{text.encode()}' | Set-Content Ark-Unpacker\src\utils\GlobalMethods.py
+          (Get-Content Ark-Unpacker\src\utils\GlobalMethods.py) -replace '\{obj\}', '{obj.encode()}' | Set-Content Ark-Unpacker\src\utils\GlobalMethods.py
+
       - name: Set up deployable spine inputs
         if: needs.update.outputs.deploy-spine-condition == 'true'
         run: |
@@ -431,15 +499,19 @@ jobs:
 
           0
           "@ > ..\deploy.txt
+
       - name: Apply deployable spine transparency
         if: needs.update.outputs.deploy-spine-condition == 'true'
         run: Get-Content ..\deploy.txt | python ..\Ark-Unpacker\Main.py
+
       - name: Copy over combined deployable spines
         if: needs.update.outputs.deploy-spine-condition == 'true'
         run: Copy-Item -Path ..\combined\deploy\* -Destination spine/deploy -Recurse -Force
+
       - name: Clean up files
         if: needs.update.outputs.deploy-spine-condition == 'true'
         run: Remove-Item .\ArkUnpackerLogs.log, .\ArkUnpackerConfig.json
+
       - name: Commit deployable spine changes
         if: needs.update.outputs.deploy-spine-condition == 'true'
         run: |
@@ -452,6 +524,7 @@ jobs:
             git commit -m "Deployable spine transparency"
             git push
           }
+
       - name: Set up enemy spine inputs
         if: needs.update.outputs.enemy-spine-condition == 'true'
         run: |
@@ -463,15 +536,19 @@ jobs:
 
           0
           "@ > ..\enemy.txt
+
       - name: Apply enemy spine transparency
         if: needs.update.outputs.enemy-spine-condition == 'true'
         run: Get-Content ..\enemy.txt | python ..\Ark-Unpacker\Main.py
+
       - name: Copy over combined enemy spines
         if: needs.update.outputs.enemy-spine-condition == 'true'
         run: Copy-Item -Path ..\combined\enemy\* -Destination spine/enemy -Recurse -Force
+
       - name: Clean up files
         if: needs.update.outputs.enemy-spine-condition == 'true'
         run: Remove-Item .\ArkUnpackerLogs.log, .\ArkUnpackerConfig.json
+
       - name: Commit enemy spine changes
         if: needs.update.outputs.enemy-spine-condition == 'true'
         run: |
@@ -484,6 +561,7 @@ jobs:
             git commit -m "Enemy spine transparency"
             git push
           }
+
       - name: Set up operator spine inputs
         if: needs.update.outputs.operator-spine-condition == 'true'
         run: |
@@ -495,15 +573,19 @@ jobs:
 
           0
           "@ > ..\op.txt
+
       - name: Apply operator spine transparency
         if: needs.update.outputs.operator-spine-condition == 'true'
         run: Get-Content ..\op.txt | python ..\Ark-Unpacker\Main.py
+
       - name: Copy over combined operator spines
         if: needs.update.outputs.operator-spine-condition == 'true'
         run: Copy-Item -Path ..\combined\operator\* -Destination spine/operator -Recurse -Force
+
       - name: Clean up files
         if: needs.update.outputs.operator-spine-condition == 'true'
         run: Remove-Item .\ArkUnpackerLogs.log, .\ArkUnpackerConfig.json
+
       - name: Commit operator spine changes
         if: needs.update.outputs.operator-spine-condition == 'true'
         run: |
@@ -526,12 +608,15 @@ jobs:
       - uses: actions/checkout@v4
         with:
           sparse-checkout: .github
+
       - name: Create pull request
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           gh pr create --title "update: ${{ needs.update.outputs.branch-name }}" --body "Merge ${{ needs.update.outputs.branch-name }} into main" --base main --head ${{ needs.update.outputs.branch-name }} || :
+
       - name: Merge pull request
+        if: ${{ inputs.auto_merge_pr == 'true' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
