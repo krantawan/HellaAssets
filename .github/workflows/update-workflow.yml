@@ -169,7 +169,7 @@ jobs:
             fi
             if [[ $(cat temp/apk.out) != *"Up to date"* ]]; then
               unzip -q temp/download/${{ inputs.server }}.apk -d temp/apk
-              if [[ "${{ inputs.server }}" == "en"  ]] && [[ ${{ inputs.extract_en_assets }} == "true" ]]; then
+              if [[ "${{ inputs.server }}" == "en"  ]] && [[ "${{ inputs.extract_en_assets }}" == "true" ]]; then
                 unzip -q temp/apk/Android/obb/com.YoStarEN.Arknights/main*.obb -d temp/obb
               fi
               echo $(grep -oP 'https://[^ ]+' temp/apk.out | head -1) > apk_url_${{ inputs.server }}.txt
