@@ -45,6 +45,9 @@ on:
       server:
         required: true
         type: string
+      auto_merge_pr:
+        required: true
+        type: boolean
       force_downloads:
         required: false
         type: string
