@@ -58,7 +58,7 @@ permissions:
 jobs:
   update:
     name: Download assets
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 60
     outputs: # https://stackoverflow.com/questions/70287603/dynamic-outputs-for-job-with-strategy-matrix
       update-condition: ${{ steps.download-assets.outputs.condition }}
@@ -621,7 +621,7 @@ jobs:
           gh pr create --title "update: ${{ needs.update.outputs.branch-name }}" --body "Merge ${{ needs.update.outputs.branch-name }} into main" --base main --head ${{ needs.update.outputs.branch-name }} || :
 
       - name: Merge pull request
-        if: ${{ inputs.auto_merge_pr == 'true' }}
+        if: inputs.auto_merge_pr == true
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
