@@ -63,6 +63,7 @@ jobs:
     outputs: # https://stackoverflow.com/questions/70287603/dynamic-outputs-for-job-with-strategy-matrix
       update-condition: ${{ steps.download-assets.outputs.condition }}
       branch-name: ${{ steps.checkout-branch.outputs.branch-name }}
+      json-valid: ${{ steps.extract-gamedata.outputs.json-valid }}
       deploy-spine-condition: ${{ steps.extract-deploy-spine.outputs.condition }}
       enemy-spine-condition: ${{ steps.extract-enemy-spine.outputs.condition }}
       operator-spine-condition: ${{ steps.extract-operator-spine.outputs.condition }}
@@ -200,6 +201,7 @@ jobs:
 
       - name: Extract gamedata
         if: steps.download-assets.outputs.extract-gamedata == 'true'
+        id: extract-gamedata
         run: |
           source $HOME/venv/bin/activate
           source scripts/utils.sh
@@ -216,7 +218,21 @@ jobs:
           --merge-dir scripts/temp/merge                        \
           --out-dir gamedata
 
-          mv gamedata/dyn/gamedata/* gamedata || :
+          ERROR=0
+          while read -r file; do
+            if ! jq empty "$file" 2>err.log; then
+              echo "$file: JSON parse error"
+              cat err.log
+              ERROR=1
+            fi
+          done < <(find gamedata -type f -name "*.json")
+          if [[ $ERROR -ne 0 ]]; then
+            echo "json-valid=false" >> $GITHUB_OUTPUT
+          else
+            echo "json-valid=true" >> $GITHUB_OUTPUT
+          fi
+
+          cp -rf gamedata/dyn/gamedata/* gamedata || :
           rm -rf gamedata/dyn
 
           git_commit "${{ inputs.modify_assets }}" "gamedata" "Gamedata"
@@ -621,7 +637,7 @@ jobs:
           gh pr create --title "update: ${{ needs.update.outputs.branch-name }}" --body "Merge ${{ needs.update.outputs.branch-name }} into main" --base main --head ${{ needs.update.outputs.branch-name }} || :
 
       - name: Merge pull request
-        if: inputs.auto_merge_pr == true
+        if: inputs.auto_merge_pr == true && needs.update.outputs.json-valid == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
