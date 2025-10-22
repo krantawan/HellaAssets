@@ -655,7 +655,7 @@ jobs:
           gh pr create --title "update: ${{ needs.update.outputs.branch-name }}" --body "Merge ${{ needs.update.outputs.branch-name }} into main" --base main --head ${{ needs.update.outputs.branch-name }} || :
 
       - name: Merge pull request
-        if: inputs.auto_merge_pr == true && needs.update.outputs.json-valid == 'true'
+        if: inputs.auto_merge_pr == true && needs.update.outputs.json-valid != 'false'
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
