@@ -48,32 +48,26 @@ on:
         type: string
       extract_en_assets:
         description: "Extract assets for EN server"
-        required: true
         type: boolean
         default: false
       auto_merge_pr:
         description: "Automatically merge PR"
-        required: true
         type: boolean
         default: false
       skip_apk_update:
         description: "Skip APK update"
-        required: false
         type: boolean
         default: false
       modify_assets:
         description: "Assets to overwrite"
-        required: false
         type: string
         default: "gamedata"
       force_downloads:
         description: "ABs to force download"
-        required: false
         type: string
         default: ""
       skip_downloads:
         description: "ABs to skip downloading"
-        required: false
         type: string
         default: "arts/maps/;arts/shop/;battle/prefabs/effects/;audio/;avg/;building/diy/;lightingdata;scenes/;shaders/"
 
