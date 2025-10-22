@@ -1157,6 +1157,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_002_emp",
           "level": 10,
@@ -1176,6 +1177,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_192_falco",
           "level": 20,
@@ -1193,6 +1195,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_208_melan",
           "level": 20,

@@ -3671,6 +3671,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_4036_forcer",
           "level": 1,
@@ -3688,6 +3689,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_302_glaze",
           "level": 1,
@@ -3705,6 +3707,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_4015_spuria",
           "level": 20,

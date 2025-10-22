@@ -1794,6 +1794,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_479_sleach",
           "level": 20,
@@ -1811,6 +1812,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_4039_horn",
           "level": 20,
@@ -1828,6 +1830,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_222_bpipe",
           "level": 20,

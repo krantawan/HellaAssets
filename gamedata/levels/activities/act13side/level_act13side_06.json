@@ -1889,6 +1889,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -2385,6 +2389,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_496_wildmn",
           "level": 25,
@@ -2407,6 +2412,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_420_flamtl",
           "level": 25,
@@ -2433,6 +2439,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_049_candle",
           "level": 1,

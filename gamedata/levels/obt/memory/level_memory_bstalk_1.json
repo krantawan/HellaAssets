@@ -1640,6 +1640,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_452_bstalk",
           "level": 20,
@@ -1657,6 +1658,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_128_plosis",
           "level": 20,
@@ -1677,6 +1679,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_018_bomb",
           "level": 1,

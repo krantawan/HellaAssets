@@ -4641,6 +4641,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -5889,6 +5893,7 @@
         "hidden": false,
         "alias": "trap_048_neonlamp#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_048_neonlamp",
           "level": 1,
@@ -5911,6 +5916,7 @@
         "hidden": false,
         "alias": "trap_048_neonlamp#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_048_neonlamp",
           "level": 1,
@@ -5933,6 +5939,7 @@
         "hidden": true,
         "alias": "trap_049_candle#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_049_candle",
           "level": 1,
@@ -5955,6 +5962,7 @@
         "hidden": true,
         "alias": "trap_049_candle#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_049_candle",
           "level": 1,
@@ -5977,6 +5985,7 @@
         "hidden": true,
         "alias": "trap_049_candle#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_049_candle",
           "level": 1,
@@ -5999,6 +6008,7 @@
         "hidden": true,
         "alias": "trap_049_candle#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_049_candle",
           "level": 1,

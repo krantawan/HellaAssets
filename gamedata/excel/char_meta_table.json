@@ -41,6 +41,11 @@
       ]
     ,
     
+      "char_4188_confes": [
+        "char_4188_confes"
+      ]
+    ,
+    
       "char_502_nblade": [
         "char_502_nblade",
         "char_1029_yato2"
@@ -740,6 +745,11 @@
       ]
     ,
     
+      "char_4187_graceb": [
+        "char_4187_graceb"
+      ]
+    ,
+    
       "char_129_bluep": [
         "char_129_bluep"
       ]
@@ -903,6 +913,11 @@
     
       "char_4081_warmy": [
         "char_4081_warmy"
+      ]
+    ,
+    
+      "char_4198_christ": [
+        "char_4198_christ"
       ]
     ,
     
@@ -1334,7 +1349,8 @@
     ,
     
       "char_103_angel": [
-        "char_103_angel"
+        "char_103_angel",
+        "char_1041_angel2"
       ]
     ,
     
@@ -1365,6 +1381,11 @@
     
       "char_430_fartth": [
         "char_430_fartth"
+      ]
+    ,
+    
+      "char_4193_lemuen": [
+        "char_4193_lemuen"
       ]
     ,
     
@@ -1713,6 +1734,11 @@
     
       "char_4039_horn": [
         "char_4039_horn"
+      ]
+    ,
+    
+      "char_4194_rmixer": [
+        "char_4194_rmixer"
       ]
     ,
     

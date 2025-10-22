@@ -946,6 +946,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -1212,6 +1216,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_124_kroos",
           "level": 1,
@@ -1229,6 +1234,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_123_fang",
           "level": 1,
@@ -1246,6 +1252,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_120_hibisc",
           "level": 1,
@@ -1263,6 +1270,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_501_durin",
           "level": 10,

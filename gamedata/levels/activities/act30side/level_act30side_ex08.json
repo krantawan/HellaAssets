@@ -3848,6 +3848,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -4032,8 +4036,8 @@
             "m_value": 0.0
           },
           "stunImmune": {
-            "m_defined": true,
-            "m_value": true
+            "m_defined": false,
+            "m_value": false
           },
           "silenceImmune": {
             "m_defined": true,
@@ -4052,10 +4056,14 @@
             "m_value": true
           },
           "disarmedCombatImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "fearedImmune": {
             "m_defined": false,
             "m_value": false
           },
-          "fearedImmune": {
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -4339,7 +4347,7 @@
             "m_value": 0.0
           },
           "stunImmune": {
-            "m_defined": true,
+            "m_defined": false,
             "m_value": false
           },
           "silenceImmune": {
@@ -4359,10 +4367,14 @@
             "m_value": false
           },
           "disarmedCombatImmune": {
-            "m_defined": false,
+            "m_defined": true,
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -5090,6 +5102,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_050_blizzard",
           "level": 1,
@@ -5118,6 +5131,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_137_winfire",
           "level": 1,
@@ -5146,6 +5160,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_137_winfire",
           "level": 1,
@@ -5174,6 +5189,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_137_winfire",
           "level": 1,
@@ -5202,6 +5218,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_137_winfire",
           "level": 1,
@@ -5230,6 +5247,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_137_winfire",
           "level": 1,
@@ -5259,6 +5277,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_138_winstone",
           "level": 1,

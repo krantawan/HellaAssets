@@ -9170,6 +9170,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -11865,6 +11869,7 @@
         "hidden": true,
         "alias": "trap_179_muctrl#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_179_muctrl",
           "level": 1,
@@ -11913,6 +11918,7 @@
         "hidden": true,
         "alias": "trap_179_muctrl#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_179_muctrl",
           "level": 1,
@@ -11966,6 +11972,7 @@
         "hidden": true,
         "alias": "trap_014_tower#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_014_tower",
           "level": 1,
@@ -11988,6 +11995,7 @@
         "hidden": true,
         "alias": "trap_014_tower#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_014_tower",
           "level": 1,
@@ -12010,6 +12018,7 @@
         "hidden": true,
         "alias": "trap_014_tower#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_014_tower",
           "level": 1,
@@ -12032,6 +12041,7 @@
         "hidden": true,
         "alias": "trap_014_tower#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_014_tower",
           "level": 1,
@@ -12054,6 +12064,7 @@
         "hidden": true,
         "alias": "trap_014_tower#5",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_014_tower",
           "level": 1,
@@ -12076,6 +12087,7 @@
         "hidden": true,
         "alias": "trap_014_tower#6",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_014_tower",
           "level": 1,

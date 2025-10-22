@@ -4739,6 +4739,7 @@
         "hidden": false,
         "alias": "trap_007_ballis#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_007_ballis",
           "level": 3,
@@ -4761,6 +4762,7 @@
         "hidden": false,
         "alias": "trap_007_ballis#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_007_ballis",
           "level": 3,
@@ -4783,6 +4785,7 @@
         "hidden": false,
         "alias": "trap_007_ballis#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_007_ballis",
           "level": 3,
@@ -4805,6 +4808,7 @@
         "hidden": false,
         "alias": "trap_007_ballis#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_007_ballis",
           "level": 3,
@@ -4827,6 +4831,7 @@
         "hidden": false,
         "alias": "trap_007_ballis#5",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_007_ballis",
           "level": 3,
@@ -4850,6 +4855,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_006_antidr",
           "level": 1,

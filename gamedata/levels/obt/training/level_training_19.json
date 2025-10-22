@@ -2189,6 +2189,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_208_melan",
           "level": 55,
@@ -2213,6 +2214,7 @@
         "hidden": false,
         "alias": "trap_043_dupilr#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_043_dupilr",
           "level": 1,
@@ -2235,6 +2237,7 @@
         "hidden": false,
         "alias": "trap_043_dupilr#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_043_dupilr",
           "level": 1,
@@ -2257,6 +2260,7 @@
         "hidden": false,
         "alias": "trap_043_dupilr#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_043_dupilr",
           "level": 1,
@@ -2279,6 +2283,7 @@
         "hidden": true,
         "alias": "trap_045_dublst#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_045_dublst",
           "level": 1,
@@ -2298,6 +2303,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_209_ardign",
           "level": 40,
@@ -2315,6 +2321,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_289_gyuki",
           "level": 55,
@@ -2335,6 +2342,7 @@
         "hidden": true,
         "alias": "trap_045_dublst#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_045_dublst",
           "level": 1,

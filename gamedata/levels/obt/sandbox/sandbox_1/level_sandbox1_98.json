@@ -5911,6 +5911,7 @@
         "hidden": false,
         "alias": "trap_459_xblight#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_459_xblight",
           "level": 2,
@@ -5933,6 +5934,7 @@
         "hidden": false,
         "alias": "trap_459_xblight#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_459_xblight",
           "level": 2,
@@ -5955,6 +5957,7 @@
         "hidden": false,
         "alias": "trap_459_xblight#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_459_xblight",
           "level": 1,
@@ -5977,6 +5980,7 @@
         "hidden": false,
         "alias": "trap_459_xblight#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_459_xblight",
           "level": 2,

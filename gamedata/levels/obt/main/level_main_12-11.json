@@ -3912,6 +3912,7 @@
         "hidden": false,
         "alias": "char_4087_ines",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_4087_ines",
           "level": 90,
@@ -3936,6 +3937,7 @@
         "hidden": false,
         "alias": "trap_111_wdfarm#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_111_wdfarm",
           "level": 1,
@@ -3958,6 +3960,7 @@
         "hidden": false,
         "alias": "trap_111_wdfarm#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_111_wdfarm",
           "level": 1,
@@ -3980,6 +3983,7 @@
         "hidden": false,
         "alias": "trap_111_wdfarm#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_111_wdfarm",
           "level": 1,
@@ -4002,6 +4006,7 @@
         "hidden": false,
         "alias": "trap_111_wdfarm#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_111_wdfarm",
           "level": 1,

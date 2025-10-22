@@ -3352,6 +3352,7 @@
         "hidden": false,
         "alias": "trap_221_ftshad#0",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_221_ftshad",
           "level": 1,
@@ -3374,6 +3375,7 @@
         "hidden": false,
         "alias": "trap_221_ftshad#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_221_ftshad",
           "level": 1,
@@ -3396,6 +3398,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#7",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,
@@ -3418,6 +3421,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#8",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,
@@ -3440,6 +3444,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,
@@ -3462,6 +3467,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#5",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,
@@ -3484,6 +3490,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#6",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,

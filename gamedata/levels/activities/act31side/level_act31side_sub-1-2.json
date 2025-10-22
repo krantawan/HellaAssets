@@ -2908,6 +2908,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_139_dhtl",
           "level": 1,

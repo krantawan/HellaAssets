@@ -2812,6 +2812,7 @@
         "hidden": false,
         "alias": "trap_062_magicstart#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_062_magicstart",
           "level": 1,
@@ -2834,6 +2835,7 @@
         "hidden": false,
         "alias": "trap_062_magicstart#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_062_magicstart",
           "level": 1,

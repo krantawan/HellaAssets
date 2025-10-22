@@ -4559,6 +4559,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_391_rosmon",
           "level": 20,
@@ -4583,6 +4584,7 @@
         "hidden": false,
         "alias": "trap_024_npcsld#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_024_npcsld",
           "level": 30,
@@ -4605,6 +4607,7 @@
         "hidden": false,
         "alias": "trap_024_npcsld#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_024_npcsld",
           "level": 30,
@@ -4627,6 +4630,7 @@
         "hidden": false,
         "alias": "trap_024_npcsld#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_024_npcsld",
           "level": 30,
@@ -4649,6 +4653,7 @@
         "hidden": false,
         "alias": "trap_024_npcsld#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_024_npcsld",
           "level": 30,

@@ -4463,6 +4463,7 @@
         "hidden": false,
         "alias": "trap_025_prison#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_025_prison",
           "level": 1,
@@ -4485,6 +4486,7 @@
         "hidden": false,
         "alias": "trap_025_prison#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_025_prison",
           "level": 1,

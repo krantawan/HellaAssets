@@ -3378,6 +3378,7 @@
         "hidden": false,
         "alias": "trap_040_canoe#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_040_canoe",
           "level": 1,
@@ -3400,6 +3401,7 @@
         "hidden": false,
         "alias": "trap_040_canoe#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_040_canoe",
           "level": 1,
@@ -3422,6 +3424,7 @@
         "hidden": false,
         "alias": "trap_040_canoe#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_040_canoe",
           "level": 1,
@@ -3444,6 +3447,7 @@
         "hidden": false,
         "alias": "trap_040_canoe#5",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_040_canoe",
           "level": 1,
@@ -3466,6 +3470,7 @@
         "hidden": false,
         "alias": "trap_042_tidectrl",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_042_tidectrl",
           "level": 1,
@@ -3504,6 +3509,7 @@
         "hidden": false,
         "alias": "trap_040_canoe#6",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_040_canoe",
           "level": 1,
@@ -3526,6 +3532,7 @@
         "hidden": false,
         "alias": "trap_040_canoe#7",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_040_canoe",
           "level": 1,
@@ -3548,6 +3555,7 @@
         "hidden": false,
         "alias": "trap_040_canoe#8",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_040_canoe",
           "level": 1,
@@ -3570,6 +3578,7 @@
         "hidden": false,
         "alias": "trap_040_canoe#9",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_040_canoe",
           "level": 1,
@@ -3592,6 +3601,7 @@
         "hidden": false,
         "alias": "trap_040_canoe#10",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_040_canoe",
           "level": 1,
@@ -3614,6 +3624,7 @@
         "hidden": false,
         "alias": "trap_040_canoe#11",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_040_canoe",
           "level": 1,
@@ -3637,6 +3648,7 @@
         "hidden": false,
         "alias": "trap_040_canoe#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_040_canoe",
           "level": 1,

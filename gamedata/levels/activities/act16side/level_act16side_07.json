@@ -9254,6 +9254,7 @@
         "hidden": false,
         "alias": "trap_057_wpnsts#p2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_057_wpnsts",
           "level": 1,
@@ -9276,6 +9277,7 @@
         "hidden": false,
         "alias": "trap_057_wpnsts#p3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_057_wpnsts",
           "level": 1,
@@ -9298,6 +9300,7 @@
         "hidden": false,
         "alias": "trap_057_wpnsts#e1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_057_wpnsts",
           "level": 1,
@@ -9320,6 +9323,7 @@
         "hidden": false,
         "alias": "trap_057_wpnsts#e2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_057_wpnsts",
           "level": 1,

@@ -2916,6 +2916,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -3842,6 +3846,7 @@
         "hidden": false,
         "alias": "trap_008_farm#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_008_farm",
           "level": 1,
@@ -3864,6 +3869,7 @@
         "hidden": false,
         "alias": "trap_008_farm#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_008_farm",
           "level": 1,
@@ -3886,6 +3892,7 @@
         "hidden": false,
         "alias": "trap_008_farm#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_008_farm",
           "level": 1,
@@ -3909,6 +3916,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_001_crate",
           "level": 1,

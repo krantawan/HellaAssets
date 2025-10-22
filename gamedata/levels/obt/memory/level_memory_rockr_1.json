@@ -1959,6 +1959,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_4045_heidi",
           "level": 20,
@@ -1983,6 +1984,7 @@
         "hidden": false,
         "alias": "trap_027_stone#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_027_stone",
           "level": 0,
@@ -2005,6 +2007,7 @@
         "hidden": false,
         "alias": "trap_027_stone#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_027_stone",
           "level": 0,
@@ -2024,6 +2027,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_4040_rockr",
           "level": 1,
@@ -2044,6 +2048,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_001_crate",
           "level": 0,

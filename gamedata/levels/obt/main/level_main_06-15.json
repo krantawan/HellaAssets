@@ -1133,6 +1133,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_002_amiya",
           "level": 25,
@@ -1155,6 +1156,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_367_swllow",
           "level": 25,
@@ -1177,6 +1179,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_017_huang",
           "level": 25,

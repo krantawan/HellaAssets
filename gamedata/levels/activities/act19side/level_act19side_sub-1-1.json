@@ -2363,6 +2363,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_4048_doroth",
           "level": 90,
@@ -2385,6 +2386,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_108_silent",
           "level": 80,
@@ -2409,6 +2411,7 @@
         "hidden": false,
         "alias": "trap_076_bgarms#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_076_bgarms",
           "level": 1,
@@ -2442,6 +2445,7 @@
         "hidden": false,
         "alias": "trap_076_bgarms#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_076_bgarms",
           "level": 1,
@@ -2475,6 +2479,7 @@
         "hidden": false,
         "alias": "trap_076_bgarms#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_076_bgarms",
           "level": 1,

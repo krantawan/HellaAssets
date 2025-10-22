@@ -1973,6 +1973,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_117_myrrh",
           "level": 25,
@@ -1995,6 +1996,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_150_snakek",
           "level": 60,
@@ -2017,6 +2019,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_196_sunbr",
           "level": 25,
@@ -2039,6 +2042,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_281_popka",
           "level": 25,
@@ -2061,6 +2065,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_120_hibisc",
           "level": 25,
@@ -2085,6 +2090,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_061_creep",
           "level": 1,
@@ -2104,6 +2110,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_209_ardign",
           "level": 40,

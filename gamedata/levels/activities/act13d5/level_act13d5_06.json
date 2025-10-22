@@ -5232,6 +5232,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -6129,6 +6133,7 @@
         "hidden": false,
         "alias": "trap_007_ballis#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_007_ballis",
           "level": 4,
@@ -6151,6 +6156,7 @@
         "hidden": false,
         "alias": "trap_007_ballis#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_007_ballis",
           "level": 4,
@@ -6173,6 +6179,7 @@
         "hidden": false,
         "alias": "trap_007_ballis#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_007_ballis",
           "level": 4,
@@ -6195,6 +6202,7 @@
         "hidden": false,
         "alias": "trap_007_ballis#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_007_ballis",
           "level": 4,
@@ -6217,6 +6225,7 @@
         "hidden": false,
         "alias": "trap_007_ballis#5",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_007_ballis",
           "level": 4,
@@ -6239,6 +6248,7 @@
         "hidden": false,
         "alias": "trap_007_ballis#6",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_007_ballis",
           "level": 4,
@@ -6262,6 +6272,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_018_bomb",
           "level": 1,

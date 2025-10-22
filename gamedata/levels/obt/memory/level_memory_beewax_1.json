@@ -2047,6 +2047,7 @@
         "hidden": false,
         "alias": "char_141_nights",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_141_nights",
           "level": 55,
@@ -2071,6 +2072,7 @@
         "hidden": false,
         "alias": "trap_042_tidectrl",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_042_tidectrl",
           "level": 1,
@@ -2090,6 +2092,7 @@
         "hidden": false,
         "alias": "char_343_tknogi",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_343_tknogi",
           "level": 55,
@@ -2107,6 +2110,7 @@
         "hidden": false,
         "alias": "char_344_beewax",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_344_beewax",
           "level": 20,

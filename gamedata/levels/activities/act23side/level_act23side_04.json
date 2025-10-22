@@ -2273,7 +2273,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2321,7 +2322,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2369,7 +2371,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2417,7 +2420,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2465,7 +2469,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2513,7 +2518,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2561,7 +2567,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2609,7 +2616,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2657,7 +2665,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2718,7 +2727,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2779,7 +2789,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2855,7 +2866,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2931,7 +2943,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -2979,7 +2992,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -3027,7 +3041,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -3079,7 +3094,8 @@
         "frozenImmune": false,
         "levitateImmune": false,
         "disarmedCombatImmune": false,
-        "fearedImmune": false
+        "fearedImmune": false,
+        "palsyImmune": false
       },
       "applyWay": "MELEE",
       "motion": "WALK",
@@ -3600,6 +3616,7 @@
         "hidden": false,
         "alias": "trap_097_hstone#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_097_hstone",
           "level": 1,
@@ -3622,6 +3639,7 @@
         "hidden": false,
         "alias": "trap_097_hstone#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_097_hstone",
           "level": 1,
@@ -3644,6 +3662,7 @@
         "hidden": false,
         "alias": "trap_097_hstone#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_097_hstone",
           "level": 1,
@@ -3666,6 +3685,7 @@
         "hidden": false,
         "alias": "trap_097_hstone#5",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_097_hstone",
           "level": 1,
@@ -3688,6 +3708,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_103_ymdgct",
           "level": 1,

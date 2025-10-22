@@ -2200,6 +2200,7 @@
         "hidden": false,
         "alias": "trap_037_airsup#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_037_airsup",
           "level": 1,
@@ -2222,6 +2223,7 @@
         "hidden": true,
         "alias": "trap_037_airsup#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_037_airsup",
           "level": 1,

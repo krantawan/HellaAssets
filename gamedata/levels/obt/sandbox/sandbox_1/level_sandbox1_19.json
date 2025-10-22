@@ -11238,6 +11238,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -11406,6 +11410,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -11560,18 +11568,22 @@
             "m_value": false
           },
           "frozenImmune": {
-            "m_defined": true,
-            "m_value": true
-          },
-          "levitateImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
           },
           "disarmedCombatImmune": {
             "m_defined": false,
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -11742,6 +11754,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -11908,6 +11924,10 @@
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -13900,6 +13920,7 @@
         "hidden": false,
         "alias": "trap_413_hiddenstone#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_413_hiddenstone",
           "level": 1,
@@ -13938,6 +13959,7 @@
         "hidden": false,
         "alias": "trap_413_hiddenstone#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_413_hiddenstone",
           "level": 1,
@@ -13971,6 +13993,7 @@
         "hidden": true,
         "alias": "trap_460_xbdiam#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_460_xbdiam",
           "level": 1,
@@ -13993,6 +14016,7 @@
         "hidden": true,
         "alias": "trap_460_xbdiam#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_460_xbdiam",
           "level": 1,
@@ -14015,6 +14039,7 @@
         "hidden": true,
         "alias": "trap_460_xbdiam#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_460_xbdiam",
           "level": 1,
@@ -14037,6 +14062,7 @@
         "hidden": true,
         "alias": "trap_460_xbdiam#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_460_xbdiam",
           "level": 1,
@@ -14059,6 +14085,7 @@
         "hidden": true,
         "alias": "trap_460_xbdiam#5",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_460_xbdiam",
           "level": 1,
@@ -14081,6 +14108,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_459_xblight",
           "level": 2,

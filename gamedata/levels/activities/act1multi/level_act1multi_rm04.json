@@ -7863,6 +7863,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -8071,6 +8075,10 @@
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -11001,6 +11009,7 @@
         "hidden": true,
         "alias": "trap_179_muctrl#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_179_muctrl",
           "level": 1,
@@ -11044,6 +11053,7 @@
         "hidden": true,
         "alias": "trap_179_muctrl#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_179_muctrl",
           "level": 1,
@@ -11087,6 +11097,7 @@
         "hidden": true,
         "alias": "trap_112_crsbow#a1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_112_crsbow",
           "level": 6,
@@ -11109,6 +11120,7 @@
         "hidden": true,
         "alias": "trap_112_crsbow#a2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_112_crsbow",
           "level": 6,
@@ -11131,6 +11143,7 @@
         "hidden": true,
         "alias": "trap_112_crsbow#a3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_112_crsbow",
           "level": 6,
@@ -11153,6 +11166,7 @@
         "hidden": true,
         "alias": "trap_112_crsbow#a4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_112_crsbow",
           "level": 6,
@@ -11175,6 +11189,7 @@
         "hidden": true,
         "alias": "trap_112_crsbow#b1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_112_crsbow",
           "level": 6,
@@ -11197,6 +11212,7 @@
         "hidden": true,
         "alias": "trap_112_crsbow#b2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_112_crsbow",
           "level": 6,
@@ -11219,6 +11235,7 @@
         "hidden": true,
         "alias": "trap_112_crsbow#b3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_112_crsbow",
           "level": 6,
@@ -11241,6 +11258,7 @@
         "hidden": true,
         "alias": "trap_112_crsbow#b4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_112_crsbow",
           "level": 6,
@@ -11263,6 +11281,7 @@
         "hidden": true,
         "alias": "trap_147_spblls#c1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_147_spblls",
           "level": 2,
@@ -11285,6 +11304,7 @@
         "hidden": true,
         "alias": "trap_147_spblls#c2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_147_spblls",
           "level": 2,
@@ -11307,6 +11327,7 @@
         "hidden": true,
         "alias": "trap_147_spblls#c3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_147_spblls",
           "level": 2,
@@ -11329,6 +11350,7 @@
         "hidden": true,
         "alias": "trap_147_spblls#c4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_147_spblls",
           "level": 2,
@@ -11351,6 +11373,7 @@
         "hidden": true,
         "alias": "trap_147_spblls#d1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_147_spblls",
           "level": 3,
@@ -11373,6 +11396,7 @@
         "hidden": true,
         "alias": "trap_147_spblls#d2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_147_spblls",
           "level": 3,
@@ -11395,6 +11419,7 @@
         "hidden": true,
         "alias": "trap_147_spblls#d3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_147_spblls",
           "level": 3,
@@ -11417,6 +11442,7 @@
         "hidden": true,
         "alias": "trap_147_spblls#d4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_147_spblls",
           "level": 3,

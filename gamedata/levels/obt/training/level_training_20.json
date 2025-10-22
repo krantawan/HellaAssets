@@ -2696,6 +2696,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_136_hsguma",
           "level": 30,
@@ -2718,6 +2719,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_171_bldsk",
           "level": 55,
@@ -2742,6 +2744,7 @@
         "hidden": false,
         "alias": "trap_058_gunctrl#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_058_gunctrl",
           "level": 1,
@@ -2761,6 +2764,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_143_ghost",
           "level": 1,
@@ -2778,6 +2782,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_332_archet",
           "level": 1,
@@ -2795,6 +2800,7 @@
         "hidden": true,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_355_ethan",
           "level": 1,

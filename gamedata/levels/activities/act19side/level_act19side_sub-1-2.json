@@ -3747,6 +3747,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_4048_doroth",
           "level": 90,
@@ -3769,6 +3770,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_108_silent",
           "level": 80,
@@ -3791,6 +3793,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_202_demkni",
           "level": 90,
@@ -3815,6 +3818,7 @@
         "hidden": false,
         "alias": "trap_078_rmtarms#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_078_rmtarms",
           "level": 1,
@@ -3848,6 +3852,7 @@
         "hidden": false,
         "alias": "trap_078_rmtarms#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_078_rmtarms",
           "level": 1,

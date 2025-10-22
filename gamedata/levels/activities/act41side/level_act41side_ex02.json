@@ -3137,6 +3137,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,
@@ -3159,6 +3160,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,
@@ -3181,6 +3183,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,
@@ -3203,6 +3206,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,
@@ -3225,6 +3229,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#5",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,
@@ -3247,6 +3252,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#6",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,
@@ -3269,6 +3275,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#7",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,
@@ -3291,6 +3298,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#8",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,
@@ -3313,6 +3321,7 @@
         "hidden": false,
         "alias": "trap_218_fttree#9",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_218_fttree",
           "level": 1,

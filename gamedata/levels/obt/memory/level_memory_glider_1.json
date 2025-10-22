@@ -2234,6 +2234,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -2394,11 +2398,11 @@
             "m_value": false
           },
           "frozenImmune": {
-            "m_defined": true,
+            "m_defined": false,
             "m_value": false
           },
           "levitateImmune": {
-            "m_defined": false,
+            "m_defined": true,
             "m_value": false
           },
           "disarmedCombatImmune": {
@@ -2406,6 +2410,10 @@
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -2574,6 +2582,10 @@
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -2904,6 +2916,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_208_melan",
           "level": 55,
@@ -2926,6 +2939,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_500_noirc",
           "level": 30,
@@ -2948,6 +2962,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_282_catap",
           "level": 55,
@@ -2965,6 +2980,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_124_kroos",
           "level": 55,
@@ -2982,6 +2998,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_449_glider",
           "level": 20,

@@ -2514,8 +2514,8 @@
             "m_value": 0.0
           },
           "stunImmune": {
-            "m_defined": true,
-            "m_value": true
+            "m_defined": false,
+            "m_value": false
           },
           "silenceImmune": {
             "m_defined": true,
@@ -2538,6 +2538,10 @@
             "m_value": true
           },
           "fearedImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -2720,8 +2724,8 @@
             "m_value": 0.0
           },
           "stunImmune": {
-            "m_defined": true,
-            "m_value": true
+            "m_defined": false,
+            "m_value": false
           },
           "silenceImmune": {
             "m_defined": true,
@@ -2744,6 +2748,10 @@
             "m_value": true
           },
           "fearedImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -3243,6 +3251,7 @@
         "hidden": false,
         "alias": "trap_139_dhtl#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_139_dhtl",
           "level": 1,
@@ -3265,6 +3274,7 @@
         "hidden": false,
         "alias": "trap_139_dhtl#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_139_dhtl",
           "level": 1,
@@ -3287,6 +3297,7 @@
         "hidden": false,
         "alias": "trap_139_dhtl#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_139_dhtl",
           "level": 1,
@@ -3309,6 +3320,7 @@
         "hidden": false,
         "alias": "trap_140_dhsb#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_140_dhsb",
           "level": 1,
@@ -3331,6 +3343,7 @@
         "hidden": false,
         "alias": "trap_139_dhtl#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_139_dhtl",
           "level": 1,
@@ -3353,6 +3366,7 @@
         "hidden": false,
         "alias": "trap_146_dhdcr#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_146_dhdcr",
           "level": 1,

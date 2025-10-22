@@ -3498,6 +3498,7 @@
         "hidden": false,
         "alias": "trap_126_outset#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_126_outset",
           "level": 1,
@@ -3526,6 +3527,7 @@
         "hidden": false,
         "alias": "trap_125_bonore#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_125_bonore",
           "level": 1,

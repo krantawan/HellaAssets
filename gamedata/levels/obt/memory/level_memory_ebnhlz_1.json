@@ -2917,6 +2917,7 @@
         "hidden": false,
         "alias": "char_4047_pianst",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_4047_pianst",
           "level": 70,
@@ -2941,6 +2942,7 @@
         "hidden": false,
         "alias": "trap_062_magicturn#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_063_magicturn",
           "level": 1,
@@ -2963,6 +2965,7 @@
         "hidden": false,
         "alias": "trap_062_magicstart#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_062_magicstart",
           "level": 1,
@@ -2985,6 +2988,7 @@
         "hidden": false,
         "alias": "trap_062_magicturn#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_063_magicturn",
           "level": 1,
@@ -3007,6 +3011,7 @@
         "hidden": false,
         "alias": "trap_062_magicturn#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_063_magicturn",
           "level": 1,
@@ -3026,6 +3031,7 @@
         "hidden": false,
         "alias": "char_4046_ebnhlz",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_4046_ebnhlz",
           "level": 20,
@@ -3043,6 +3049,7 @@
         "hidden": false,
         "alias": "char_1024_hbisc2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_1024_hbisc2",
           "level": 70,

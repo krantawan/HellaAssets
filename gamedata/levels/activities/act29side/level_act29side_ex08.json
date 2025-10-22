@@ -4371,8 +4371,8 @@
             "m_value": 0.0
           },
           "stunImmune": {
-            "m_defined": true,
-            "m_value": true
+            "m_defined": false,
+            "m_value": false
           },
           "silenceImmune": {
             "m_defined": true,
@@ -4391,10 +4391,14 @@
             "m_value": true
           },
           "disarmedCombatImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "fearedImmune": {
             "m_defined": false,
             "m_value": false
           },
-          "fearedImmune": {
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -4865,16 +4869,16 @@
             "m_value": 0.0
           },
           "stunImmune": {
-            "m_defined": true,
+            "m_defined": false,
             "m_value": false
           },
           "silenceImmune": {
             "m_defined": true,
-            "m_value": true
+            "m_value": false
           },
           "sleepImmune": {
             "m_defined": true,
-            "m_value": false
+            "m_value": true
           },
           "frozenImmune": {
             "m_defined": true,
@@ -4885,10 +4889,14 @@
             "m_value": false
           },
           "disarmedCombatImmune": {
-            "m_defined": false,
+            "m_defined": true,
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -5720,6 +5728,7 @@
         "hidden": false,
         "alias": "trap_134_condtr#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_134_condtr",
           "level": 1,
@@ -5742,6 +5751,7 @@
         "hidden": false,
         "alias": "trap_136_portlexi#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_136_portlexi",
           "level": 1,
@@ -5764,6 +5774,7 @@
         "hidden": false,
         "alias": "trap_136_portlexi#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_136_portlexi",
           "level": 1,
@@ -5787,6 +5798,7 @@
         "hidden": false,
         "alias": "trap_135_portlent#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_135_portlent",
           "level": 1,

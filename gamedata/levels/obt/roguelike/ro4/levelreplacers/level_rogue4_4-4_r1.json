@@ -3960,7 +3960,7 @@
             "m_value": 0.0
           },
           "stunImmune": {
-            "m_defined": true,
+            "m_defined": false,
             "m_value": false
           },
           "silenceImmune": {
@@ -3980,10 +3980,14 @@
             "m_value": false
           },
           "disarmedCombatImmune": {
-            "m_defined": false,
+            "m_defined": true,
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -4182,6 +4186,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -4330,7 +4338,7 @@
             "m_value": 0.0
           },
           "stunImmune": {
-            "m_defined": true,
+            "m_defined": false,
             "m_value": false
           },
           "silenceImmune": {
@@ -4350,10 +4358,14 @@
             "m_value": false
           },
           "disarmedCombatImmune": {
-            "m_defined": false,
+            "m_defined": true,
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -4532,7 +4544,7 @@
             "m_value": 0.0
           },
           "stunImmune": {
-            "m_defined": true,
+            "m_defined": false,
             "m_value": false
           },
           "silenceImmune": {
@@ -4552,10 +4564,14 @@
             "m_value": false
           },
           "disarmedCombatImmune": {
-            "m_defined": false,
+            "m_defined": true,
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -5667,6 +5683,7 @@
         "hidden": false,
         "alias": "trap_097_hstone#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_097_hstone",
           "level": 1,
@@ -5689,6 +5706,7 @@
         "hidden": false,
         "alias": "trap_097_hstone#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_097_hstone",
           "level": 1,
@@ -5711,6 +5729,7 @@
         "hidden": false,
         "alias": "trap_097_hstone#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_097_hstone",
           "level": 1,
@@ -5733,6 +5752,7 @@
         "hidden": false,
         "alias": "trap_097_hstone#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_097_hstone",
           "level": 1,
@@ -5755,6 +5775,7 @@
         "hidden": false,
         "alias": "trap_097_hstone#5",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_097_hstone",
           "level": 1,
@@ -5777,6 +5798,7 @@
         "hidden": false,
         "alias": "trap_097_hstone#6",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_097_hstone",
           "level": 1,
@@ -5799,6 +5821,7 @@
         "hidden": true,
         "alias": "trap_757_skzbox#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_757_skzbox",
           "level": 3,
@@ -5821,6 +5844,7 @@
         "hidden": true,
         "alias": "trap_758_skzmbx#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_758_skzmbx",
           "level": 3,
@@ -5849,6 +5873,7 @@
         "hidden": true,
         "alias": "trap_759_skzwyx#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_759_skzwyx",
           "level": 3,
@@ -5871,6 +5896,7 @@
         "hidden": true,
         "alias": "trap_757_skzbox#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_757_skzbox",
           "level": 3,
@@ -5893,6 +5919,7 @@
         "hidden": true,
         "alias": "trap_758_skzmbx#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_758_skzmbx",
           "level": 3,
@@ -5921,6 +5948,7 @@
         "hidden": true,
         "alias": "trap_759_skzwyx#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_759_skzwyx",
           "level": 3,
@@ -5943,6 +5971,7 @@
         "hidden": true,
         "alias": "trap_764_skzshp",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_764_skzshp",
           "level": 1,
@@ -5965,6 +5994,7 @@
         "hidden": true,
         "alias": "trap_760_skztzs#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_760_skztzs",
           "level": 1,

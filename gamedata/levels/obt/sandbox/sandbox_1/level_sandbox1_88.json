@@ -7263,6 +7263,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7301,6 +7302,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7339,6 +7341,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7377,6 +7380,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7415,6 +7419,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7453,6 +7458,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7481,6 +7487,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7509,6 +7516,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7537,6 +7545,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7565,6 +7574,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7593,6 +7603,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7621,6 +7632,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7649,6 +7661,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7677,6 +7690,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7705,6 +7719,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7733,6 +7748,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7761,6 +7777,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7789,6 +7806,7 @@
         "hidden": false,
         "alias": "trap_484_xbcp#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_484_xbcp",
           "level": 1,
@@ -7817,6 +7835,7 @@
         "hidden": false,
         "alias": "trap_485_xbrandprop#0",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_485_xbrandprop",
           "level": 1,
@@ -7875,6 +7894,7 @@
         "hidden": false,
         "alias": "trap_485_xbrandprop#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_485_xbrandprop",
           "level": 1,
@@ -7933,6 +7953,7 @@
         "hidden": false,
         "alias": "trap_485_xbrandprop#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_485_xbrandprop",
           "level": 1,
@@ -7991,6 +8012,7 @@
         "hidden": false,
         "alias": "trap_485_xbrandprop#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_485_xbrandprop",
           "level": 1,
@@ -8049,6 +8071,7 @@
         "hidden": false,
         "alias": "trap_485_xbrandprop#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_485_xbrandprop",
           "level": 1,
@@ -8107,6 +8130,7 @@
         "hidden": false,
         "alias": "trap_485_xbrandprop#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_485_xbrandprop",
           "level": 1,
@@ -8165,6 +8189,7 @@
         "hidden": false,
         "alias": "trap_485_xbrandprop#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_485_xbrandprop",
           "level": 1,
@@ -8223,6 +8248,7 @@
         "hidden": false,
         "alias": "trap_485_xbrandprop#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_485_xbrandprop",
           "level": 1,
@@ -8281,6 +8307,7 @@
         "hidden": false,
         "alias": "trap_485_xbrandprop#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_485_xbrandprop",
           "level": 1,

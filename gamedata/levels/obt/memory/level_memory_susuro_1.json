@@ -1246,6 +1246,7 @@
         "hidden": false,
         "alias": "char_502_nblade",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_502_nblade",
           "level": 30,
@@ -1263,6 +1264,7 @@
         "hidden": false,
         "alias": "char_298_susuro",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_298_susuro",
           "level": 20,
@@ -1280,6 +1282,7 @@
         "hidden": false,
         "alias": "char_192_falco",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_192_falco",
           "level": 55,

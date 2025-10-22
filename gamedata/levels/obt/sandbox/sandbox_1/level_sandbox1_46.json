@@ -5351,6 +5351,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -5517,6 +5521,10 @@
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -5687,6 +5695,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -5853,6 +5865,10 @@
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -6027,6 +6043,10 @@
             "m_value": false
           },
           "fearedImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -7316,6 +7336,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_416_gtreasure",
           "level": 1,
@@ -7338,6 +7359,7 @@
         "hidden": false,
         "alias": "trap_413_hiddenstone#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_413_hiddenstone",
           "level": 1,
@@ -7371,6 +7393,7 @@
         "hidden": true,
         "alias": "trap_411_xbiron#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_411_xbiron",
           "level": 1,
@@ -7393,6 +7416,7 @@
         "hidden": true,
         "alias": "trap_411_xbiron#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_411_xbiron",
           "level": 1,
@@ -7415,6 +7439,7 @@
         "hidden": true,
         "alias": "trap_411_xbiron#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_411_xbiron",
           "level": 1,
@@ -7437,6 +7462,7 @@
         "hidden": true,
         "alias": "trap_411_xbiron#4",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_411_xbiron",
           "level": 1,
@@ -7459,6 +7485,7 @@
         "hidden": true,
         "alias": "trap_411_xbiron#5",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_411_xbiron",
           "level": 1,
@@ -7481,6 +7508,7 @@
         "hidden": true,
         "alias": "trap_411_xbiron#6",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_411_xbiron",
           "level": 1,
@@ -7503,6 +7531,7 @@
         "hidden": true,
         "alias": "trap_411_xbiron#7",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_411_xbiron",
           "level": 1,
@@ -7525,6 +7554,7 @@
         "hidden": true,
         "alias": "trap_411_xbiron#8",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_411_xbiron",
           "level": 1,
@@ -7547,6 +7577,7 @@
         "hidden": true,
         "alias": "trap_411_xbiron#9",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_411_xbiron",
           "level": 1,
@@ -7569,6 +7600,7 @@
         "hidden": true,
         "alias": "trap_411_xbiron#10",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_411_xbiron",
           "level": 1,
@@ -7591,6 +7623,7 @@
         "hidden": true,
         "alias": "trap_411_xbiron#11",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_411_xbiron",
           "level": 1,
@@ -7613,6 +7646,7 @@
         "hidden": true,
         "alias": "trap_411_xbiron#12",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_411_xbiron",
           "level": 1,

@@ -3781,6 +3781,10 @@
           "fearedImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "palsyImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -4638,6 +4642,7 @@
         "hidden": false,
         "alias": "trap_008_farm#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_008_farm",
           "level": 1,
@@ -4660,6 +4665,7 @@
         "hidden": false,
         "alias": "trap_008_farm#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_008_farm",
           "level": 1,
@@ -4679,6 +4685,7 @@
         "hidden": false,
         "alias": "char_325_bison",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_325_bison",
           "level": 20,
@@ -4696,6 +4703,7 @@
         "hidden": false,
         "alias": "char_101_sora",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_101_sora",
           "level": 70,
@@ -4713,6 +4721,7 @@
         "hidden": false,
         "alias": "char_103_angel",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_103_angel",
           "level": 70,
@@ -4730,6 +4739,7 @@
         "hidden": false,
         "alias": "char_201_moeshd",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_201_moeshd",
           "level": 70,
@@ -4747,6 +4757,7 @@
         "hidden": false,
         "alias": "char_102_texas",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_102_texas",
           "level": 70,

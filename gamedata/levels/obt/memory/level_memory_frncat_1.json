@@ -1770,6 +1770,7 @@
         "hidden": false,
         "alias": "char_277_sqrrel",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_277_sqrrel",
           "level": 20,
@@ -1792,6 +1793,7 @@
         "hidden": false,
         "alias": "char_127_estell",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_127_estell",
           "level": 20,
@@ -1814,6 +1816,7 @@
         "hidden": false,
         "alias": "char_185_frncat",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_185_frncat",
           "level": 20,

@@ -2694,6 +2694,7 @@
         "hidden": false,
         "alias": null,
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_046_oxygen",
           "level": 1,

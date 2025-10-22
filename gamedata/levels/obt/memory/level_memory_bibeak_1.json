@@ -1621,6 +1621,7 @@
         "hidden": false,
         "alias": "char_252_bibeak",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_252_bibeak",
           "level": 20,
@@ -1638,6 +1639,7 @@
         "hidden": false,
         "alias": "char_196_sunbr",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_196_sunbr",
           "level": 20,
@@ -1655,6 +1657,7 @@
         "hidden": false,
         "alias": "char_212_ansel",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_212_ansel",
           "level": 55,
@@ -1675,6 +1678,7 @@
         "hidden": false,
         "alias": "trap_009_battery",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_009_battery",
           "level": 1,

@@ -5321,8 +5321,8 @@
             "m_value": 0.0
           },
           "stunImmune": {
-            "m_defined": true,
-            "m_value": true
+            "m_defined": false,
+            "m_value": false
           },
           "silenceImmune": {
             "m_defined": true,
@@ -5341,10 +5341,14 @@
             "m_value": true
           },
           "disarmedCombatImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "fearedImmune": {
             "m_defined": false,
             "m_value": false
           },
-          "fearedImmune": {
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -5716,8 +5720,8 @@
             "m_value": 0.0
           },
           "stunImmune": {
-            "m_defined": true,
-            "m_value": true
+            "m_defined": false,
+            "m_value": false
           },
           "silenceImmune": {
             "m_defined": true,
@@ -5736,10 +5740,14 @@
             "m_value": true
           },
           "disarmedCombatImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "fearedImmune": {
             "m_defined": false,
             "m_value": false
           },
-          "fearedImmune": {
+          "palsyImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -7364,6 +7372,7 @@
         "hidden": true,
         "alias": "trap_056_sfsuifire#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_056_sfsuifire",
           "level": 1,
@@ -7386,6 +7395,7 @@
         "hidden": true,
         "alias": "trap_056_sfsuifire#2",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_056_sfsuifire",
           "level": 1,
@@ -7408,6 +7418,7 @@
         "hidden": true,
         "alias": "trap_056_sfsuifire#3",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_056_sfsuifire",
           "level": 1,

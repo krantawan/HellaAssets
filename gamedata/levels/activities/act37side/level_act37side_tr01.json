@@ -2006,6 +2006,7 @@
         "hidden": true,
         "alias": "char_155_tiger#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_155_tiger",
           "level": 50,
@@ -2028,6 +2029,7 @@
         "hidden": true,
         "alias": "char_157_dagda#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_157_dagda",
           "level": 50,
@@ -2052,6 +2054,7 @@
         "hidden": false,
         "alias": "trap_184_vtarsn#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "trap_184_vtarsn",
           "level": 1,
@@ -2071,6 +2074,7 @@
         "hidden": true,
         "alias": "char_154_morgan#1",
         "uniEquipIds": null,
+        "showSpIllust": false,
         "inst": {
           "characterKey": "char_154_morgan",
           "level": 50,
