@@ -1,5 +1,7 @@
 import argparse
+import json
 import os
+import requests
 import shutil
 import subprocess
 
@@ -65,6 +67,20 @@ flatbuffer_mappings = {
 }
 
 
+commits_page_cache = []
+
+
+def get_commits_page(page):
+    if page <= len(commits_page_cache) and commits_page_cache[page - 1]:
+        # print(f"Fetching cached data for FB commits page {page}")
+        return commits_page_cache[page - 1]
+    # print(f"Fetching data for FB commits page {page}")
+    response = requests.get(f"https://api.github.com/repos/MooncellWiki/OpenArknightsFBS/commits?sha=main&page={page}&per_page=100")
+    commits = response.json()
+    commits_page_cache.append(commits)
+    return commits
+
+
 def get_flatbuffer_name(path: str) -> str | None:
     matched = [
         *[flatbuffer for flatbuffer in flatbuffer_list if flatbuffer == path],
@@ -75,7 +91,7 @@ def get_flatbuffer_name(path: str) -> str | None:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--schema-dir", default="./temp/ArknightsFlatbuffers/yostar", help="Path to flatbuffer schema directory")
+    parser.add_argument("--schema-dir", default="./flatbuffers", help="Path to flatbuffer schema directory")
     parser.add_argument("--anon-dir", default="./temp/extract/anon", help="Path to anon directory")
     parser.add_argument("--obb-dir", default="./temp/extract/obb", help="Path to obb directory")
     parser.add_argument("--merge-dir", default="./temp/merge", help="Path to merge directory")
@@ -111,6 +127,9 @@ def main():
             shutil.copyfileobj(fsrc, fdst)
             # print(f"Trimmed & copied {src} -> {dst}")
 
+    with open(os.path.join(args.schema_dir, "_flatbuffers.json"), "r") as f:
+        _flatbuffers = json.load(f)
+
     for root, _, fnames in os.walk(args.merge_dir):
         for fname in fnames:
             if not fname.endswith(".bytes"):
@@ -121,26 +140,95 @@ def main():
             if not schema:
                 print(f"Unknown schema for {fname}, skipping")
                 continue
+            schema_file = f"{schema}.fbs"
 
             src_path = os.path.join(root, fname)
             rel_path = os.path.relpath(src_path, args.merge_dir)
             out_subdir = os.path.join(args.out_dir, os.path.dirname(rel_path))
             os.makedirs(out_subdir, exist_ok=True)
 
-            subprocess.run([
-                "flatc",
-                "-o", out_subdir,
-                "--no-warnings",
-                "--json",
-                "--strict-json",
-                "--natural-utf8",
-                "--defaults-json",
-                "--raw-binary",
-                os.path.join(args.schema_dir, f"{schema}.fbs"),
-                "--",
-                src_path
-            ])
-            # print(f"Converted {src_path} -> {out_subdir}")
+            def deserialize():
+                result = subprocess.run([
+                    "flatc",
+                    "-o", out_subdir,
+                    "--no-warnings",
+                    "--json",
+                    "--strict-json",
+                    "--natural-utf8",
+                    "--defaults-json",
+                    "--raw-binary",
+                    os.path.join(args.schema_dir, schema_file),
+                    "--",
+                    src_path
+                ])
+                # print(" ".join([
+                #     "flatc",
+                #     "-o", out_subdir,
+                #     "--no-warnings",
+                #     "--json",
+                #     "--strict-json",
+                #     "--natural-utf8",
+                #     "--defaults-json",
+                #     "--raw-binary",
+                #     os.path.join(args.schema_dir, schema_file),
+                #     "--",
+                #     src_path
+                # ]))
+                # print(result.returncode)
+                return True
+
+            def validate(commit):
+                json_file_path = os.path.join(out_subdir, base + ".json")
+                # print(out_subdir)
+                # print(json_file_path)
+                if not os.path.exists(json_file_path):
+                    return False
+                with open(json_file_path, 'r') as json_file:
+                    try:
+                        parsed_json = json.load(json_file)
+                        if _flatbuffers[schema_file]['commit'] != commit:
+                            _flatbuffers[schema_file]['commit'] = commit
+                            print(f"Validated {schema_file} at {commit}")
+                        return True
+                    except Exception as e:
+                        # print(f"Error decoding JSON for {json_file_path}: {e}")
+                        return False
+
+            def find_next_commit(commit):
+                page = 1
+                while True:
+                    commits = get_commits_page(page)
+                    if not commits:
+                        print(f"Error finding next commit at {commit}")
+                        return False
+                    parent_commits = [x for x in commits if x['parents'] and x['parents'][0]['sha'] == commit]
+                    if parent_commits:
+                        return parent_commits[0]['sha']
+                    else:
+                        page += 1
+
+            def replace_schema(commit):
+                try:
+                    response = requests.get(f"https://raw.githubusercontent.com/MooncellWiki/OpenArknightsFBS/{commit}/FBS/{schema}.fbs")
+                    with open(os.path.join(args.schema_dir, schema_file), "w") as f:
+                        f.write(response.text)
+                    return True
+                except Exception as e:
+                    print(f"Error replacing {schema_file}: {e}")
+                    return False
+
+            # print(schema_file)
+            current_commit = _flatbuffers[schema_file]['commit']
+            while deserialize() and not validate(current_commit):
+                next_commit = find_next_commit(current_commit)
+                if (next_commit):
+                    replace_schema(next_commit)
+                    current_commit = next_commit
+                else:
+                    break
+
+    with open(os.path.join(args.schema_dir, "_flatbuffers.json"), "w") as f:
+        f.write(json.dumps(_flatbuffers, indent=4))
 
 
 if __name__ == "__main__":

@@ -86,8 +86,6 @@ jobs:
           rm -f temp && mkdir temp \
           && cd temp
 
-          git clone --depth=1 https://github.com/ArknightsAssets/ArknightsFlatbuffers.git
-
           # official flatc releases don't preserve null fields, but this one does?
           wget -nv https://raw.githubusercontent.com/MooncellWiki/torappu/refs/heads/main/bin/flatc \
           && chmod +x ./flatc \
@@ -211,8 +209,8 @@ jobs:
           dotnet $ARKSTUDIOCLI scripts/temp/obb/assets/AB/Android/anon $OPTIONS -o scripts/temp/extract/obb
           dotnet $ARKSTUDIOCLI scripts/temp/download/anon $OPTIONS -o scripts/temp/extract/anon
 
-          python3 scripts/gamedata.py                   \
-          --schema-dir scripts/temp/ArknightsFlatbuffers/yostar \
+          python3 scripts/gamedata.py                           \
+          --schema-dir flatbuffers                              \
           --anon-dir scripts/temp/extract/anon                  \
           --obb-dir scripts/temp/extract/obb                    \
           --merge-dir scripts/temp/merge                        \
@@ -235,6 +233,7 @@ jobs:
           cp -rf gamedata/dyn/gamedata/* gamedata || :
           rm -rf gamedata/dyn
 
+          git_commit "flatbuffers" "flatbuffers" "Flatbuffers"
           git_commit "${{ inputs.modify_assets }}" "gamedata" "Gamedata"
           if [[ $(cat /tmp/git_commit) -eq 1 ]]; then
             git push

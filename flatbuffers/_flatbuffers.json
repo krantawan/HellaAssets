@@ -1,0 +1,167 @@
+{
+    "activity_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "audio_data.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "battle_equip_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "buff_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "building_data.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "building_local_data.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "campaign_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "chapter_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "character_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "char_meta_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "charm_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "char_patch_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "charword_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "checkin_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "climb_tower_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "clue_data.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "cooperate_battle_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "crisis_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "crisis_v2_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "display_meta_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "enemy_database.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "enemy_handbook_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "ep_breakbuff_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "extra_battlelog_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "favor_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "gacha_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "gamedata_const.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "handbook_info_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "handbook_team_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "hotupdate_meta_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "init_text.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "item_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "legion_mode_buff_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "main_text.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "medal_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "meta_ui_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "mission_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "open_server_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "prts___levels.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "replicate_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "resource_manifest.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "retro_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "roguelike_topic_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "sandbox_perm_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "shop_client_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "skill_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "skin_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "stage_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "story_review_meta_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "story_review_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "story_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "tip_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "token_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "uniequip_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    },
+    "zone_table.fbs": {
+        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+    }
+}
