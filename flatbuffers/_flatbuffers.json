@@ -24,7 +24,7 @@
         "commit": "83ecc786245435932e84812ff34820782b8a1824"
     },
     "character_table.fbs": {
-        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+        "commit": "3eb9eea6dd28420bf595fc9244b03fe0a1a36b65"
     },
     "char_meta_table.fbs": {
         "commit": "83ecc786245435932e84812ff34820782b8a1824"
@@ -33,10 +33,10 @@
         "commit": "83ecc786245435932e84812ff34820782b8a1824"
     },
     "char_patch_table.fbs": {
-        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+        "commit": "3eb9eea6dd28420bf595fc9244b03fe0a1a36b65"
     },
     "charword_table.fbs": {
-        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+        "commit": "3cd83986000ba0bd4a88d78a636558cb7505684a"
     },
     "checkin_table.fbs": {
         "commit": "83ecc786245435932e84812ff34820782b8a1824"
@@ -114,7 +114,7 @@
         "commit": "83ecc786245435932e84812ff34820782b8a1824"
     },
     "prts___levels.fbs": {
-        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+        "commit": "3eb9eea6dd28420bf595fc9244b03fe0a1a36b65"
     },
     "replicate_table.fbs": {
         "commit": "83ecc786245435932e84812ff34820782b8a1824"
@@ -123,10 +123,10 @@
         "commit": "83ecc786245435932e84812ff34820782b8a1824"
     },
     "retro_table.fbs": {
-        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+        "commit": "3cd83986000ba0bd4a88d78a636558cb7505684a"
     },
     "roguelike_topic_table.fbs": {
-        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+        "commit": "3cd83986000ba0bd4a88d78a636558cb7505684a"
     },
     "sandbox_perm_table.fbs": {
         "commit": "83ecc786245435932e84812ff34820782b8a1824"
@@ -138,10 +138,10 @@
         "commit": "83ecc786245435932e84812ff34820782b8a1824"
     },
     "skin_table.fbs": {
-        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+        "commit": "3eb9eea6dd28420bf595fc9244b03fe0a1a36b65"
     },
     "stage_table.fbs": {
-        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+        "commit": "3cd83986000ba0bd4a88d78a636558cb7505684a"
     },
     "story_review_meta_table.fbs": {
         "commit": "83ecc786245435932e84812ff34820782b8a1824"
@@ -156,7 +156,7 @@
         "commit": "83ecc786245435932e84812ff34820782b8a1824"
     },
     "token_table.fbs": {
-        "commit": "83ecc786245435932e84812ff34820782b8a1824"
+        "commit": "3eb9eea6dd28420bf595fc9244b03fe0a1a36b65"
     },
     "uniequip_table.fbs": {
         "commit": "83ecc786245435932e84812ff34820782b8a1824"
