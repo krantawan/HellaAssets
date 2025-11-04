@@ -118,6 +118,7 @@ jobs:
 
       - name: Download assets
         id: download-assets
+        timeout-minutes: 10
         working-directory: scripts
         run: |
           source $HOME/venv/bin/activate
@@ -160,6 +161,7 @@ jobs:
 
       - name: Download APK
         if: steps.download-assets.outputs.condition == 'true'
+        timeout-minutes: 10
         working-directory: scripts
         run: |
           source $HOME/venv/bin/activate
@@ -652,7 +654,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          gh pr create --title "update: ${{ needs.update.outputs.branch-name }}" --body "Merge ${{ needs.update.outputs.branch-name }} into main" --base main --head ${{ needs.update.outputs.branch-name }} || :
+          gh pr create --title "update: ${{ needs.update.outputs.branch-name }}" \
+          --body "Merge ${{ needs.update.outputs.branch-name }} into main
+          ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+          --base main \
+          --head ${{ needs.update.outputs.branch-name }} \
+          || :
 
       - name: Merge pull request
         if: inputs.auto_merge_pr == true && needs.update.outputs.json-valid != 'false'

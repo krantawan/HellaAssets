@@ -20,6 +20,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
+
       - name: Install dependencies
         run: |
           curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash && \
@@ -30,10 +31,12 @@ jobs:
           sudo apt install ./mongodb-database-tools-ubuntu2404-x86_64-100.13.0.deb && \
           rm ./mongodb-database-tools-ubuntu2404-x86_64-100.13.0.deb && \
           mongodump --version
+
       - name: Dump database archive
         run: |
           mkdir -p backup && \
           mongodump --db=arknights --archive=backup/arknights.dump
+
       - name: Commit database archive
         id: commit
         run: |
@@ -62,11 +65,18 @@ jobs:
       - uses: actions/checkout@v4
         with:
           sparse-checkout: .github
+
       - name: Create pull request
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          gh pr create --title "backup: ${{ needs.backup.outputs.branch-name }}" --body "Merge ${{ needs.backup.outputs.branch-name }} into main" --base main --head ${{ needs.backup.outputs.branch-name }} || :
+          gh pr create --title "backup: ${{ needs.backup.outputs.branch-name }}" \
+          --body "Merge ${{ needs.backup.outputs.branch-name }} into main
+          ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+          --base main \
+          --head ${{ needs.backup.outputs.branch-name }} \
+          || :
+
       - name: Merge pull request
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
